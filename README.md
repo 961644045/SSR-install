@@ -25,7 +25,7 @@ sudo su
 
 注意：如果你安装的有我的另一个 ssr.sh 脚本，请先卸载ShadowsocksR服务端，再安装这个脚本（不能共存）！
 
-wget -N --no-check-certificate https://softs.loan/Bash/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
+wget -N --no-check-certificate https://github.com/961644045/user/releases/download/test/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
 备用下载地址（上面的链接无法下载，就用这个）：
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
 
