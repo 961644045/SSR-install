@@ -14,9 +14,9 @@ ssrmu.sh 脚本是单服务器多用户脚本，使用的是 SSR服务端的Mudb
 如何选择这两个脚本？
 根据你的需求选择，比如你仅仅是 一个或两个人使用，并且不需要流量管理功能，那么选择 ssr.sh 好了。而如果很多人使用，并且都需要限制流量来管理，那你适合使用 ssrmu.sh，所以自己看着选，多试试（两个脚本不能共存）！
 
-安装步骤
+# 安装步骤
 
-简单的来说，如果你什么都不懂，那么你直接一路回车就可以了！
+#简单的来说，如果你什么都不懂，那么你直接一路回车就可以了！
 
 本脚本需要Linux root账户权限才能正常安装运行，所以如果不是 root账号，请先切换为root，如果是 root账号，那么请跳过！
 
@@ -32,8 +32,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 下载运行后会提示你输入数字来选择要做什么。输入 1 ，就会开始安装ShadowsocksR服务端，并且会提示你输入Shadowsocks的 端口/密码/加密方式/ 
 协议/混淆（混淆和协议是通过输入数字选择的）等参数来添加第一个用户。注意：用户名不支持中文，如果输入中文会一直保存下去！
 
-使用说明
-运行脚本，
+# 使用说明
+# 运行脚本，
 
 bash ssrmu.sh
 
@@ -66,7 +66,7 @@ bash ssrmu.sh clearall
 注意：添加/删除/修改 用户配置后，无需重启ShadowsocksR服务端，ShadowsocksR服务端会定时读取数据库文件内的信息，不过修改 用户配置后，
 可能要等个十几秒才能应用最新的配置（因为ShadowsocksR不是实时读取数据库的，所以有间隔时间）。
 
-文件位置：
+# 文件位置：
 安装目录：/usr/local/shadowsocksr
 配置文件：/usr/local/shadowsocksr/user-config.json
 数据文件：/usr/local/shadowsocksr/mudb.json
@@ -74,7 +74,7 @@ bash ssrmu.sh clearall
 
 
 
-其他说明
+# 其他说明
 ShadowsocksR 安装后，自动设置为 系统服务，所以支持使用服务来启动/停止等操作，同时支持开机启动。
 启动 ShadowsocksR：/etc/init.d/ssrmu start
 停止 ShadowsocksR：/etc/init.d/ssrmu stop
